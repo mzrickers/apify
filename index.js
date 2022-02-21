@@ -3,6 +3,20 @@ let productArray = [];
 let lowPrice = 0;
 let highPrice = 100000;
 
+// example products to be pulled from the website
+let products = [
+  {
+    "id": 1,
+    "price": 1,
+    "product": "product1"
+  },
+  {
+    "id": 2,
+    "price": 99999,
+    "product": "product2"
+  }
+]
+
 const countProduct = async (lowPrice, highPrice) => {
   const response = await axios.get(apiUrl, {
     params: {
